@@ -1,0 +1,31 @@
+body {
+    background: rgb(247, 243, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: all 0.75s ease-in;
+    
+}
+div.main{
+    position: relative;
+    width:300px;
+    height: 150px;
+    border-radius: 300px;
+    border: 2px solid black;
+    transition: all 1s ease-in;
+
+
+    .pri{
+        position: absolute;
+        width:140px;
+        height: 140px;
+        border-radius: 100%;
+        border: 2px solid whitesmoke;
+        background: rgb(11, 11, 12);
+        left: 3px; //left ikuwe 150px on click
+        top: 3px;
+        transition: all 1s ease-in;
+
+    }
+}
