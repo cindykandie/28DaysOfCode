@@ -1,5 +1,5 @@
 body {
-  background: #f7f3f7;
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@ div.main .pri {
   height: 140px;
   border-radius: 100%;
   border: 2px solid whitesmoke;
-  background: #0b0b0c;
+  background: black;
   left: 3px;
   top: 3px;
   -webkit-transition: all 1s ease-in;
