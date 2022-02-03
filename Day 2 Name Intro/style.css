@@ -1,0 +1,138 @@
+body {
+  background: #33322f;
+  -webkit-transition: all ease-in;
+  transition: all ease-in;
+  -webkit-animation: bgChangr 4s ease-in infinite;
+          animation: bgChangr 4s ease-in infinite;
+}
+
+.main-container {
+  position: relative;
+  height: 100vh;
+  width: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .bold-name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: bold;
+  font-weight: 800;
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 100%;
+  -webkit-animation: comeUp 3s ease-in forwards;
+          animation: comeUp 3s ease-in forwards;
+  opacity: 0;
+}
+
+.main-container .bold-name span {
+  font-family: inherit;
+  font-style: inherit;
+  position: absolute;
+  top: -750%;
+  -webkit-animation: goDown 3s ease-in forwards;
+          animation: goDown 3s ease-in forwards;
+  -webkit-transition: all ease-in;
+  transition: all ease-in;
+}
+
+.main-container .cursive-name {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 200;
+  color: rgba(218, 3, 189, 0.75);
+  font-size: 4rem;
+  position: absolute;
+  right: 100%;
+  -webkit-animation: popIn 3s ease-in forwards;
+          animation: popIn 3s ease-in forwards;
+}
+
+@-webkit-keyframes bgChanger {
+  0% {
+    background: #0a034d;
+  }
+  25% {
+    background: #5c0202;
+  }
+  50% {
+    background: #310147;
+  }
+  75% {
+    background: #202020;
+  }
+  100% {
+    background: #1b2b49;
+  }
+}
+
+@keyframes bgChanger {
+  0% {
+    background: #0a034d;
+  }
+  25% {
+    background: #5c0202;
+  }
+  50% {
+    background: #310147;
+  }
+  75% {
+    background: #202020;
+  }
+  100% {
+    background: #1b2b49;
+  }
+}
+
+@-webkit-keyframes comeUp {
+  100% {
+    top: 50%;
+    display: block;
+    opacity: 100;
+  }
+}
+
+@keyframes comeUp {
+  100% {
+    top: 50%;
+    display: block;
+    opacity: 100;
+  }
+}
+
+@-webkit-keyframes goDown {
+  100% {
+    top: 5%;
+    left: 43%;
+  }
+}
+
+@keyframes goDown {
+  100% {
+    top: 5%;
+    left: 43%;
+  }
+}
+
+@-webkit-keyframes popIn {
+  100% {
+    right: 25%;
+    top: 53%;
+  }
+}
+
+@keyframes popIn {
+  100% {
+    right: 25%;
+    top: 53%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
